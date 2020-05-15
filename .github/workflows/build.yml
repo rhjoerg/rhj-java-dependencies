@@ -28,3 +28,5 @@ jobs:
 
     - name: Deploy
       run: mvn deploy
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
