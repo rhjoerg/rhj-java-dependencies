@@ -6,6 +6,7 @@
 	<interactiveMode>false</interactiveMode>
 	
 	<activeProfiles>
+		<activeProfile>central</activeProfile>
 		<activeProfile>github</activeProfile>
 	</activeProfiles>
 	
@@ -20,22 +21,30 @@
 	</servers>
 	
 	<profiles>
+	
 		<profile>
-			<id>github</id>
+			<id>central</id>
 			<repositories>
-			
 				<repository>
 					<id>central</id>
 					<url>https://repo1.maven.org/maven2</url>
 					<releases><enabled>true</enabled></releases>
 					<snapshots><enabled>false</enabled></snapshots>
 				</repository>
-				
+			</repositories>
+		</profile>
+	
+		<profile>
+			<id>github</id>
+			<repositories>
 				<repository>
-					<id>github-snapshots</id>
+					<id>snapshots</id>
 					<url>https://maven.pkg.github.com/rhjoerg/maven-snapshots</url>
 				</repository>
-				
+				<repository>
+					<id>releases</id>
+					<url>https://maven.pkg.github.com/rhjoerg/maven</url>
+				</repository>
 			</repositories>
 		</profile>
 	</profiles>

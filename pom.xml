@@ -43,29 +43,17 @@
 		</developer>
 	</developers>
 	
-	<repositories>
-	
-		<repository>
-			<id>central</id>
-			<name>Maven Central</name>
-			<url>https://repo.maven.apache.org/maven2/</url>
-		</repository>
-		
-		<repository>
-			<id>github-snapshots</id>
-			<name>GitHub snapshot repository</name>
-			<url>https://maven.pkg.github.com/rhjoerg/maven-snapshots</url>
-		</repository>
-		
-	</repositories>
-	
 	<distributionManagement>
 	
 		<snapshotRepository>
 			<id>github</id>
-			<name>GitHub</name>
 			<url>https://maven.pkg.github.com/rhjoerg/maven-snapshots</url>
 		</snapshotRepository>
+		
+		<repository>
+			<id>github</id>
+			<url>https://maven.pkg.github.com/rhjoerg/maven</url>
+		</repository>
 		
 	</distributionManagement>
 
