@@ -22,7 +22,6 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-#        server-id: github
         
     - name: Cache
       uses: actions/cache@v1
@@ -31,6 +30,9 @@ jobs:
         key: ${{ runner.os }}-maven-${{ hashFiles('pom.xml') }}
         restore-keys: |
           ${{ runner.os }}-maven-
+          
+    - name: Settings
+      run: cat settings.xml
         
     - name: Package
       run: mvn package --settings settings.xml
