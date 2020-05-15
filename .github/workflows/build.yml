@@ -22,7 +22,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-        server-id: github
+#        server-id: github
         
     - name: Cache
       uses: actions/cache@v1
@@ -34,6 +34,8 @@ jobs:
         
     - name: Package
       run: mvn package --settings settings.xml
+      env:
+        GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
 
     - name: Deploy
       run: mvn deploy --settings settings.xml
