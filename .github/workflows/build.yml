@@ -23,6 +23,9 @@ jobs:
       with:
         java-version: 11
         server-id: github
+        
+    - name: Settings
+      run: cat settings.xml
 
     - name: Package
       run: mvn package
