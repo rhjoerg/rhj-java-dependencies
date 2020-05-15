@@ -43,4 +43,13 @@
 		</developer>
 	</developers>
 	
+	<distributionManagement>
+		<snapshotRepository>
+			<id>github</id>
+			<name>GitHub</name>
+			<uniqueVersion>false</uniqueVersion>
+			<url>https://maven.pkg.github.com/rhjoerg/maven-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
