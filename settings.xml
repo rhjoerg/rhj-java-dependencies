@@ -32,7 +32,7 @@
 				</repository>
 				
 				<repository>
-					<id>github</id>
+					<id>github-snapshots</id>
 					<url>https://maven.pkg.github.com/rhjoerg/maven-snapshots</url>
 				</repository>
 				
