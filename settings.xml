@@ -12,7 +12,7 @@
 	<servers>
 	
 		<server>
-			<id>github-snapshots</id>
+			<id>github</id>
 			<username>${env.GITHUB_ACTOR}</username>
 			<password>${env.DEPLOY_TOKEN}</password>
 		</server>

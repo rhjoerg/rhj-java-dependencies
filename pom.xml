@@ -62,7 +62,7 @@
 	<distributionManagement>
 	
 		<snapshotRepository>
-			<id>github-snapshots</id>
+			<id>github</id>
 			<name>GitHub</name>
 			<url>https://maven.pkg.github.com/rhjoerg/maven-snapshots</url>
 		</snapshotRepository>
