@@ -27,7 +27,7 @@ jobs:
         settings-path: ${{ github.workspace }}
 
     - name: Debug settings
-      run: env
+      run: cat settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
         
