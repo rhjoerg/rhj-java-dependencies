@@ -28,9 +28,7 @@ jobs:
       run: cat settings.xml
 
     - name: Package
-      run: mvn package
+      run: mvn package --settings settings.xml
 
     - name: Deploy
-      run: mvn deploy
-      env:
-        GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+      run: mvn deploy --settings settings.xml
