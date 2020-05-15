@@ -24,11 +24,18 @@ jobs:
         java-version: 11
         server-id: github
         
-    - name: Settings
-      run: cat settings.xml
-
+    - name: Cache
+      uses: actions/cache@v1
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+        
     - name: Package
       run: mvn package --settings settings.xml
+      env:
+        GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
 
     - name: Deploy
       run: mvn deploy --settings settings.xml
