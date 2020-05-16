@@ -40,6 +40,8 @@
 				<repository>
 					<id>maven</id>
 					<url>https://maven.pkg.github.com/rhjoerg/maven</url>
+					<releases><enabled>true</enabled></releases>
+					<snapshots><enabled>true</enabled></snapshots>
 				</repository>
 			</repositories>
 		</profile>
