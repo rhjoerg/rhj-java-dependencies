@@ -38,11 +38,7 @@
 			<id>github</id>
 			<repositories>
 				<repository>
-					<id>snapshots</id>
-					<url>https://maven.pkg.github.com/rhjoerg/maven-snapshots</url>
-				</repository>
-				<repository>
-					<id>releases</id>
+					<id>maven</id>
 					<url>https://maven.pkg.github.com/rhjoerg/maven</url>
 				</repository>
 			</repositories>
