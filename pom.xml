@@ -7,7 +7,7 @@
 	
 	<groupId>ch.rhj</groupId>
 	<artifactId>rhj-java-dependencies</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	
 	<name>RHJ Java Dependencies</name>
@@ -47,7 +47,7 @@
 	
 		<snapshotRepository>
 			<id>github</id>
-			<url>https://maven.pkg.github.com/rhjoerg/maven-snapshots</url>
+			<url>https://maven.pkg.github.com/rhjoerg/maven</url>
 		</snapshotRepository>
 		
 		<repository>
