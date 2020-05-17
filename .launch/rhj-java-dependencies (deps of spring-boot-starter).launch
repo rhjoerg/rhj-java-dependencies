@@ -6,8 +6,8 @@
     <booleanAttribute key="M2_OFFLINE" value="false"/>
     <stringAttribute key="M2_PROFILES" value=""/>
     <listAttribute key="M2_PROPERTIES">
-        <listEntry value="effective-pom.artifact=ch.rhj:rhj-java-parent:0.0.1-SNAPSHOT"/>
-        <listEntry value="effective-pom.output=target/rhj-java-parent-effective-pom.xml"/>
+        <listEntry value="effective-pom.artifact=org.springframework.boot:spring-boot-starter:2.3.0.RELEASE"/>
+        <listEntry value="effective-pom.output=target/spring-boot-starter-effective-pom.xml"/>
     </listAttribute>
     <stringAttribute key="M2_RUNTIME" value="EMBEDDED"/>
     <booleanAttribute key="M2_SKIP_TESTS" value="false"/>

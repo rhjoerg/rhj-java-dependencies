@@ -58,8 +58,8 @@
 	</distributionManagement>
 	
 	<properties>
-		<effpom.artifact>${project.groupId}:${project.artifactId}:${project.version}</effpom.artifact>
-		<effpom.output>${project.build.directory}/effective-pom.xml</effpom.output>
+		<effective-pom.artifact>${project.groupId}:${project.artifactId}:${project.version}</effective-pom.artifact>
+		<effective-pom.output>${project.build.directory}/effective-pom.xml</effective-pom.output>
 	</properties>
 	
 	<build>
@@ -78,8 +78,8 @@
 					<artifactId>maven-help-plugin</artifactId>
 					<version>3.2.0</version>
 					<configuration>
-						<artifact>${effpom.artifact}</artifact>
-						<output>${effpom.output}</output>
+						<artifact>${effective-pom.artifact}</artifact>
+						<output>${effective-pom.output}</output>
 						<verbose>true</verbose>
 					</configuration>
 				</plugin>
