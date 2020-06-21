@@ -63,7 +63,25 @@
 		<effective-pom.output>${project.build.directory}/effective-pom.xml</effective-pom.output>
 		
 		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-		<guava.version>29.0-jre</guava.version>		
+		<guava.version>29.0-jre</guava.version>
+		
+		<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+		<commons-codec.version>1.14</commons-codec.version>
+		
+		<!-- https://mvnrepository.com/artifact/commons-collections/commons-collections -->
+		<commons-collections.version>3.2.2</commons-collections.version>
+		
+		<!-- https://mvnrepository.com/artifact/commons-digester/commons-digester -->
+		<commons-digester.version>1.8.1</commons-digester.version>
+		
+		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+		<commons-logging.version>1.2</commons-logging.version>
+		
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<commons-io.version>2.7</commons-io.version>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<commons-lang3.version>3.10</commons-lang3.version>
 
 	</properties>
 	
@@ -73,6 +91,36 @@
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
 				<version>${guava.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>${commons-codec.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-collections</groupId>
+				<artifactId>commons-collections</artifactId>
+				<version>${commons-collections.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-digester</groupId>
+				<artifactId>commons-digester</artifactId>
+				<version>${commons-digester.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>${commons-logging.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>${commons-io.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
